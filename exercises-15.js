@@ -14,6 +14,7 @@ function groupAnimals(animals) {
         if(sudahAda === false) {
             result.push([animals[i]])
         }
+        result.sort()
     }
     return result
 }
