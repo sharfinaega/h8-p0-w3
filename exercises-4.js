@@ -6,49 +6,52 @@ function dataHandling2(input) {
     input.splice(1, 1, input[1] + ' Elsharawy');
     input.splice(2, 1, 'Propinsi '+ input[2]);
     console.log(input);
+    var inputAwal = input[3].split('/');
     var tgl = input[3].split('/');
+    var namaBulan = '';
     switch (parseInt(tgl[1])) {
         case 1:
-            console.log('Januari');
+            namaBulan = 'Januari';
             break;
         case 2:
-            console.log('Februari');
+            namaBulan = 'Februari';
             break;
         case 3:
-            console.log('Maret');
+            namaBulan = 'Maret';
             break;
         case 4:
-            console.log('April');
+            namaBulan = 'April';
             break;
         case 5:
-            console.log('Mei');
+            namaBulan = 'Mei';
             break;
         case 6:
-            console.log('Juni');
+            namaBulan = 'Juni';
             break;
         case 7:
-            console.log('Juli');
+            namaBulan = 'Juli';
             break;
         case 8:
-            console.log('Agustus');
+            namaBulan = 'Agustus';
             break;
         case 9:
-            console.log('September');
+            namaBulan = 'September';
             break;
         case 10:
-            console.log('Oktober');
+            namaBulan = 'Oktober';
             break;
         case 11:
-            console.log('November');
+            namaBulan = 'November';
             break;
         case 11:
-            console.log('Desember');
+            namaBulan = 'Desember';
             break;
         default:
     }
+    console.log(namaBulan);
     tgl.sort(function(a,b){return b-a});
     console.log(tgl);
-    console.log(tgl.reverse().join('-'));
+    console.log(inputAwal.join('-'));
     console.log(input[1].slice(0, 15));
 }
 
